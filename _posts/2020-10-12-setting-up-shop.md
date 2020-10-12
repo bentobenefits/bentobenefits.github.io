@@ -31,6 +31,26 @@ mouse' (my preference) and then the option to re-use the current working
 directory when launching a new window.  That's a lifesaver when you're working
 down deep in a directory tree.
 
+The thing I always forget to save off somewhere is my `PS1` prompt config.
+With this new laptop, I'm using zsh rather than bash, so even then I had to
+tweak a few things.  Note that Macs ship with the git prompt stuff already,
+no need to download anything else.  This `.zshrc` file will add the current
+git branch name to your command line prompt.
+
+```bash
+# This sets the prompt to look like this, when in a git branch:
+# paul@mbp:~/work/bentobenefits.github.io (master) %
+zstyle ':completion:*:*:git:*' script /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.zsh
+source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
+setopt PROMPT_SUBST ; PS1='%n@mbp:%~ $(__git_ps1 "(%s) ")%% '
+
+# This is to load the Kiex scripts (see below)
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+
+# I always add a local bin directory for quick scripts I throw together.
+export PATH=$PATH:~/bin
+```
+
 ### Homebrew
 
 Probably step number 1, install [Homebrew](https://brew.sh/).  Being more of a
