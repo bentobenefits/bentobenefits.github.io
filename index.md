@@ -1,4 +1,4 @@
-#![Bento Benefits](/images/bb_logo-01-01.png)
+![Bento Benefits](/images/bb_logo-01-01.png)
 
 # Bento Benefits Tech Blog
 

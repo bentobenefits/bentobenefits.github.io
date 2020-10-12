@@ -1,3 +1,7 @@
 theme: jekyll-theme-midnight
 safe: true
+title: "Bento Benefits Tech Blog"
+description: "Techie notes and tips while building our startup"
+show_downloads: "false"
+
 
