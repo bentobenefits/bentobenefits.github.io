@@ -87,6 +87,24 @@ Open vim and run the command `PlugInstall` to install the plugin, exit and
 the next time you open the app you should be presented with pleasing colors
 on your Elixir code (and HTML, and Markdown)...
 
+*Update 10/13/2020*:
+
+I don't really like auto-indent in my editor stuff.  It never indents the way
+I expect/want it, and I'd rather add it myself than backspace over a bunch of
+stuff that may or may not be tabs.  If you're following best practices in your
+code, you're not indenting THAT much at any given time anyway.  I couldn't
+figure out how to configure `vim-elixir` to NOT indent, so I had to go into
+the code itself and "fix" it, by going into
+`~/.vim/plugged/vim-elixir/indent/elixir.vim` and adding this to the top of
+the file:
+
+```
+" NOTE:  Disabling indents for Elixir.
+finish
+```
+
+This just shortcuts the whole logic for doing indents on Elixir files.
+
 ### Git Stuff
 
 OS X comes with git out of the box, so no problem there.  Of course, there's
