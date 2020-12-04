@@ -9,7 +9,7 @@ Author: ...Paul
 
 I @#$%ing hate Javascript.
 
-I used `brew` to install an unrelated package and it updated `node` to first
+I used `brew` to install an unrelated package and it updated `node` to
 15.3.0.  And that broke everything Javascript/webpack related in our Bento
 application.  When the server would start up, the webpack process would fail:
 
