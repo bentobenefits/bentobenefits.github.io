@@ -39,7 +39,7 @@ git branch name to your command line prompt.
 
 ```bash
 # This sets the prompt to look like this, when in a git branch:
-# paul@mbp:~/work/bentobenefits.github.io (master) %
+# paul@mbp:~/work/shimmerlabs.github.io (master) %
 zstyle ':completion:*:*:git:*' script /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.zsh
 source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
 setopt PROMPT_SUBST ; PS1='%n@mbp:%~ $(__git_ps1 "(%s) ")%% '
